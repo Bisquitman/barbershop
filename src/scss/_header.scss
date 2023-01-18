@@ -1,0 +1,23 @@
+.header {
+  // .header__container
+  &__container {
+    padding-top: 16px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid $thirdColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 54px;
+  }
+
+  // .header__navigation
+  &__navigation {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}

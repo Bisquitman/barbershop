@@ -1,0 +1,19 @@
+.navigation {
+  text-transform: uppercase;
+  line-height: 100%;
+
+  // .navigation__list
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 16px 32px;
+
+    @media (max-width: $tablet) {
+      column-gap: 26px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+    }
+  }
+}

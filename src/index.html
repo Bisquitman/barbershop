@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('parts/head.html', {
+"title":"Главная",
+})
+
+<body>
+<div class="wrapper">
+  @@include('parts/header.html', {})
+
+  <main class="main page">
+    @@include('parts/hero.html', {})
+    @@include('parts/price.html', {})
+    @@include('parts/about.html', {})
+    @@include('parts/reserve.html', {})
+  </main>
+
+  @@include('parts/footer.html', {})
+
+</div><!-- wrapper -->
+
+</body>
+
+</html>
