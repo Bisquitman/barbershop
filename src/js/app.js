@@ -1,20 +1,23 @@
-import burger from './modules/burger.js';
-import { useDynamicAdapt } from './modules/dynamicAdapt.js';
+// import burger from './modules/burger.js';
+// import { useDynamicAdapt } from './modules/dynamicAdapt.js';
 import * as flsFunctions from './modules/functions.js';
-import sliders from './modules/sliders.js';
-import spoilers from './modules/spoilers.js';
-import Swiper, { Navigation, Pagination } from 'swiper';
+import service from './modules/service.js';
+import slider from './modules/slider.js';
+// import spoilers from './modules/spoilers.js';
 
-
-flsFunctions.isWebp();
-const swiper = new Swiper();
-
-spoilers();
-burger();
-flsFunctions.ibg();
-sliders();
-useDynamicAdapt();
-
-window.onload = function () {
-  document.addEventListener('click', flsFunctions.documentActions);
+const init = () => {
+  flsFunctions.isWebp();
+  slider();
+  service();
 };
+
+window.addEventListener('DOMContentLoaded', init);
+
+// spoilers();
+// burger();
+// flsFunctions.ibg();
+// useDynamicAdapt();
+
+// window.onload = function () {
+//   document.addEventListener('click', flsFunctions.documentActions);
+// };

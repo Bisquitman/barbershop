@@ -1,0 +1,133 @@
+.about {
+  padding: 62px 0;
+
+  @media (max-width: $tablet) {
+    padding: 40px 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 32px 0;
+  }
+
+  // .about__title
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: uppercase;
+    max-width: 700px;
+    margin-bottom: 24px;
+
+    @media (max-width: $tablet) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+  }
+
+  // .about__description
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $thirdColor;
+    max-width: 700px;
+    margin-bottom: 72px;
+
+    @media (max-width: $laptop) {
+      margin-bottom: 46px;
+    }
+
+    @media (max-width: $tablet) {
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 12px;
+    }
+  }
+
+  // .about__list
+  &__list {
+    --item-width: 384px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--item-width), 1fr));
+    gap: 24px;
+
+    @media (max-width: $laptop) {
+      --item-width: 290px;
+      column-gap: 20px;
+    }
+
+    @media (max-width: $tablet) {
+      --item-width: 310px;
+    }
+
+    @media (max-width: $mobile) {
+      --item-width: 272px;
+    }
+  }
+
+  // .about__item
+  &__item {
+    padding: 6px 0 6px 96px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 80px;
+    min-height: 80px;
+
+    @media (max-width: $laptop) {
+      padding: 96px 0 0 0;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 6px 0 6px 96px;
+    }
+
+    @media (max-width: $mobile) {
+      background-size: 64px;
+      padding: 6px 0 6px 72px;
+      min-height: 64px;
+    }
+
+    &_top {
+      background-image: url('../img/about/top.svg');
+    }
+
+    &_master {
+      background-image: url('../img/about/master.svg');
+    }
+
+    &_warranty {
+      background-image: url('../img/about/warranty.svg');
+    }
+  }
+
+  // .about__item-title
+  &__item-title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+    }
+  }
+
+  // .about__item-description
+  &__item-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: $thirdColor;
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+    }
+  }
+}

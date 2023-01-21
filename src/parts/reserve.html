@@ -10,9 +10,8 @@
 
     <form action="#" class="reserve__form">
       <div class="reserve__form-container">
-        <fieldset class="radio__label" class="reserve__fieldset">
-          <legend class="reserve__leg
-          end">Услуга</legend>
+        <fieldset class="reserve__fieldset reserve__fieldset_service" name="fieldservice">
+          <legend class="reserve__legend">Услуга</legend>
           <label class="radio">
             <input type="radio" class="radio__input" name="service">
             <span class="radio__label">стрижка ножницами</span>
@@ -24,7 +23,7 @@
           </label>
           
           <label class="radio">
-            <input type="radio" class="radio__input" name="service">
+            <input type="radio" class="radio__input" name="service" checked>
             <span class="radio__label">стрижка + стрижка бороды</span>
           </label>
           
@@ -49,39 +48,39 @@
           </label>
         </fieldset>
         
-        <fieldset class="reserve__fieldset">
+        <fieldset class="reserve__fieldset" name="fieldspec">
           <legend class="reserve__legend">Специалист</legend>
 
           <label class="radio">
             <input type="radio" class="radio__input" name="spec">
-            <span class="radio__label radio__label_spec">Игорь</span>
+            <span class="radio__label radio__label_spec" style="--bg-image: url(../img/reserve/spec-1.png)">Игорь</span>
           </label>
           
           <label class="radio">
             <input type="radio" class="radio__input" name="spec">
-            <span class="radio__label radio__label_spec">Анатолий</span>
+            <span class="radio__label radio__label_spec" style="--bg-image: url(../img/reserve/spec-2.png)">Анатолий</span>
           </label>
 
           <label class="radio">
             <input type="radio" class="radio__input" name="spec">
-            <span class="radio__label radio__label_spec">Руслан</span>
+            <span class="radio__label radio__label_spec" style="--bg-image: url(../img/reserve/spec-3.png)">Руслан</span>
           </label>
 
           <label class="radio">
             <input type="radio" class="radio__input" name="spec">
-            <span class="radio__label radio__label_spec">Михаил</span>
+            <span class="radio__label radio__label_spec" style="--bg-image: url(../img/reserve/spec-4.png)">Михаил</span>
           </label>
 
           <label class="radio">
             <input type="radio" class="radio__input" name="spec">
-            <span class="radio__label radio__label_spec">Евгений</span>
+            <span class="radio__label radio__label_spec" style="--bg-image: url(../img/reserve/spec-5.png)">Евгений</span>
           </label>
         </fieldset>
 
-        <fieldset class="reserve__fieldset">
+        <fieldset class="reserve__fieldset" name="fielddate">
           <legend class="reserve__legend">Дата и время</legend>
 
-          <fieldset class="reserve__fieldset reserve__fieldset_sub">
+          <fieldset class="reserve__fieldset reserve__fieldset_sub" name="fieldmonth">
             <label class="radio">
               <input type="radio" class="radio__input" name="month">
               <span class="radio__label">Январь</span>
@@ -98,7 +97,7 @@
             </label>
           </fieldset>
 
-          <fieldset class="reserve__fieldset reserve__fieldset_sub">
+          <fieldset class="reserve__fieldset reserve__fieldset_sub" name="fieldday">
             <label class="radio">
               <input type="radio" class="radio__input" name="day">
               <span class="radio__label">18 января</span>
@@ -120,7 +119,7 @@
             </label>
           </fieldset>
 
-          <fieldset class="reserve__fieldset reserve__fieldset_sub">
+          <fieldset class="reserve__fieldset reserve__fieldset_sub" name="fieldtime">
             <label class="radio">
               <input type="radio" class="radio__input" name="time">
               <span class="radio__label">10:00-11:30</span>
@@ -159,7 +158,7 @@
         </fieldset>
       </div>
 
-      <button type="submit" class="reserve__btn main-link" title="Записаться к нам">Записаться</button>
+      <button type="submit" disabled class="reserve__btn main-link" id="btn" title="Записаться к нам">Записаться</button>
     </form>
   </div>
 </section>

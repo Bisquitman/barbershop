@@ -20,7 +20,7 @@ img {
 }
 
 body {
-  min-width: $minWidth;
+  min-width: 320px;
   font-family: $fontFamily; // подключение основного шрифта сайта
   font-size: 14px; // основной размер шрифта сайта - под проект
   line-height: 1.2; // высота строки - под проект
@@ -126,6 +126,7 @@ main {
   text-transform: uppercase;
   color: $secondColor;
   background-color: $mainColor;
+  border: none;
   transition: background-color 0.3s ease;
 
   @media (max-width: $tablet) {

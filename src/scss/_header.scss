@@ -8,6 +8,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 54px;
+
+    @media (max-width: $mobile) {
+      padding-top: 12px;
+      padding-bottom: 13px;
+    }
   }
 
   // .header__navigation

@@ -1,0 +1,140 @@
+.reserve {
+  padding: 62px 0 124px;
+
+  @media (max-width: $tablet) {
+    padding: 40px 0 80px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 32px 0 64px;
+  }
+
+  // .reserve__title
+  &__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+
+    @media (max-width: $tablet) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+  }
+
+  // .reserve__list
+  &__list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $thirdColor;
+    padding-left: 24px;
+    margin-bottom: 72px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 12px;
+      line-height: 120%;
+      padding-left: 18px;
+      margin-bottom: 32px;
+    }
+  }
+
+  // .reserve__item
+  &__item {
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // .reserve__form
+  &__form {
+  }
+
+  // .reserve__form-container
+  &__form-container {
+    margin-bottom: 40px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 32px;
+    }
+
+    @media (max-width: $mobile) {
+      margin-bottom: 24px;
+    }
+  }
+
+  // .reserve__legend
+  &__legend {
+    flex-basis: 100%;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+      margin-bottom: 1em;
+    }
+  }
+
+  // .reserve__fieldset
+  &__fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    border: none;
+    margin: 0 0 72px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: $tablet) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 4px;
+      margin-bottom: 32px;
+    }
+
+    // .reserve__fieldset_sub
+    &_sub {
+      flex-basis: 100%;
+      margin-bottom: 24px;
+
+      @media (max-width: $tablet) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  // .reserve__btn
+  &__btn {
+  }
+
+  // .reserve__success
+  &__success {
+    text-align: center;
+    font-size: large;
+    line-height: 1.8;
+    margin-top: 32px;
+
+    strong {
+      color: $hoverColor;
+    }
+  }
+}
